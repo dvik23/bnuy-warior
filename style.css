@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+h1, p {
+    text-align: center;
+    font-family: "Cherry Bomb One", system-ui;
+    color: #29130c;
+}
+body{
+    background-color: #8cba91;
+}
+#jatek-board{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(10, 60px);
+
+    background-color: #ccffda;
+    border: 5px solid #0a2110;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.bunny-img {
+    transition: all 0.4s ease-in-out;
+    pointer-events: none; /* kattintast ne blokkolja*/
+    transform-origin: center;
+}
+
+.cella {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgba(10, 33, 16, 0.2);
+}
+#sugo-szoveg {
+    text-align: center;
+    font-family: "Cherry Bomb One", system-ui;
+    color: #29130c;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.1s ease-in-out;
+}
+#sugo-szoveg:hover {
+    color: #b07d6b;
+}
+#ertem {
+    text-align: center;
+    font-family: "Cherry Bomb One", system-ui;
+    color: #29130c;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.1s ease-in-out;
+    margin-top: 10px;
+}
+#ertem:hover {
+    color: #b07d6b;
+}

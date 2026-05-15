@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buny buny buny buny bnuy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="stats">
+        <h1>bnuy warior</h1>
+        <p>Készítette: Dandé Júlia Viktória (Neptun kód: VDO7OS)</p>
+        <p>Aktuális játékos: <span id="aktualis-jatekos">Nyuszi #1</span></p>
+        <p>Összegyűjtött répák: <span id="repa-count">0</span></p>
+    </div>
+    <div id="beallitasok">
+        <label for="ido-set">Játékidő beállítása:</label>
+        <select id="ido-set">
+            <option value="5">5 perc</option>
+            <option value="10">10 perc</option>
+            <option value="15">15 perc</option>
+            <option value="20">20 perc</option>
+        </select>
+        <button onclick="jatekStart()">Játék Indítása</button>
+    </div>
+
+    <div id="timer-display">Hátralévő idő: <span id="time-left">00:00</span></div>
+
+    <p id="sugo-szoveg" onclick="mutatSugo()">Súgó</p>
+    <div id = "sugo" style="display: none; position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);">
+        <div style="background-color: #ccffda; margin: 15% auto; padding: 20px; border: 5px solid #0a2110; width: 50%; border-radius: 20px; font-family: 'Cherry Bomb One', sans-serif;">
+            <h2>Játék menete</h2>
+            <ul>
+                <li>Két játékos 1-1 nyuszival játszik</li>
+                <li>A kezdő játékos random választódik ki</li>
+                <li>Egy körben mindkét nyuszi 5-öt léphet</li>
+                <li>A játék lényege hogy minél több répát egyen a nyuszid, és ettől minél nagyobb legyen</li>
+                <li>Ha a nyuszid nagyobb a másiknál és rálépsz a mezőjére, lecsaphatod</li>
+                <li>Ha lejárt az idő, a nagyobb nyuszi nyer</li>
+            </ul>
+            <p id="ertem" onclick="bezarSugo()">Értem!</p>
+        </div>
+    </div>
+
+    <audio id="hatter-zene" loop>
+        <source src="assets/bgm.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lecsap">
+        <source src="assets/slap-ahh.mp3" type="audio/mpeg">
+    </audio>
+    <div id="jatek-board"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
